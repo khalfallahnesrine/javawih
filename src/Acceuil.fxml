@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white; -fx-border-color: #d70a71;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AcceuilController">
+   <children>
+      <HBox alignment="CENTER" layoutX="7.0" layoutY="8.0" prefHeight="43.0" prefWidth="586.0" spacing="350.0">
+         <children>
+            <Label text="Acceuil" textFill="#d70a71">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <TextField promptText="recherchez?" style="-fx-border-color: #d70a71;" />
+         </children>
+      </HBox>
+      <VBox alignment="CENTER" layoutX="7.0" layoutY="57.0" prefHeight="314.0" prefWidth="110.0" spacing="10.0" style="-fx-border-color: #d70a71;">
+         <children>
+            <Button fx:id="bmessage" mnemonicParsing="false" onAction="#SendMessage" prefHeight="66.0" prefWidth="98.0" text="Message" textFill="#d70a71" />
+            <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="98.0" text="Evénement" textFill="#d70a71" />
+            <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="98.0" text="publication" textFill="#d70a71" />
+            <Button mnemonicParsing="false" prefHeight="60.0" prefWidth="98.0" text="Rendez vous" textFill="#d70a71" />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="469.0" layoutY="57.0" prefHeight="314.0" prefWidth="110.0" spacing="10.0" style="-fx-border-color: #d70a71;">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="66.0" prefWidth="98.0" text="Profil" textFill="#d70a71" />
+            <Button fx:id="bnotes" mnemonicParsing="false" onAction="#Notes" prefHeight="60.0" prefWidth="98.0" text="Notes" textFill="#d70a71" />
+            <Button fx:id="brecherche" mnemonicParsing="false" onAction="#recherche" prefHeight="60.0" prefWidth="98.0" text="Recherche" textFill="#d70a71" />
+            <Button fx:id="bcontactus" mnemonicParsing="false" prefHeight="60.0" prefWidth="98.0" text="Nous contactez" textFill="#d70a71" />
+         </children>
+      </VBox>
+      <VBox layoutX="135.0" layoutY="57.0" prefHeight="314.0" prefWidth="294.0" spacing="10.0" style="-fx-border-color: #d70a71;">
+         <children>
+            <HBox alignment="TOP_CENTER" prefHeight="81.0" prefWidth="293.0" spacing="100.0">
+               <children>
+                  <ImageView fitHeight="72.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Users/khalf/OneDrive/الصور/LOGO%20WIH.png" />
+                     </image>
+                  </ImageView>
+                  <TextField prefHeight="82.0" prefWidth="164.0" promptText="Ajouter une publication" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button fx:id="bpp" layoutX="9.0" layoutY="373.0" mnemonicParsing="false" onAction="#GoToPP" text="Page Précedente" textFill="#d70a71" />
+      <Button layoutX="469.0" layoutY="372.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="110.0" text="Déconnexion" textFill="#d70a71" />
+   </children>
+</AnchorPane>

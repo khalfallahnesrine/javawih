@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="459.0" prefWidth="334.0" style="-fx-background-color: White;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UtilisateurPatientController">
+   <children>
+      <VBox alignment="CENTER" layoutX="12.0" layoutY="82.0" prefHeight="373.0" prefWidth="310.0" spacing="5.0">
+         <children>
+            <HBox prefHeight="34.0" prefWidth="310.0" spacing="30.0">
+               <children>
+                  <Text fill="#d70a71" strokeType="OUTSIDE" strokeWidth="0.0" text="Age :">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Spinner prefHeight="26.0" prefWidth="155.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="34.0" prefWidth="310.0" spacing="26.0">
+               <children>
+                  <Text fill="#d70a71" strokeType="OUTSIDE" strokeWidth="0.0" text="Poids">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Spinner prefHeight="26.0" prefWidth="155.0" />
+               </children>
+            </HBox>
+            <HBox prefHeight="34.0" prefWidth="310.0" spacing="25.0">
+               <children>
+                  <Text fill="#d70a71" strokeType="OUTSIDE" strokeWidth="0.0" text="Taille:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Spinner prefHeight="26.0" prefWidth="155.0" />
+               </children>
+            </HBox>
+            <MenuButton fx:id="BsituationFamillaile" mnemonicParsing="false" text="Situation Familliale" textFill="#d70a71">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Mariée" />
+                <MenuItem mnemonicParsing="false" text="Dévorcée" />
+                  <MenuItem mnemonicParsing="false" text="Célibataire" />
+              </items>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </MenuButton>
+            <HBox prefHeight="34.0" prefWidth="310.0" spacing="30.0">
+               <children>
+                  <Text fill="#d70a71" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre d'enfant:">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Spinner />
+               </children>
+            </HBox>
+            <HBox prefHeight="34.0" prefWidth="310.0" spacing="30.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="34.0" prefWidth="310.0">
+                     <children>
+                        <MenuButton mnemonicParsing="false" prefHeight="40.0" prefWidth="201.0" text="Handicap" textFill="#d70a71">
+                          <items>
+                            <MenuItem mnemonicParsing="false" text="Action 1" />
+                            <MenuItem mnemonicParsing="false" text="Action 2" />
+                          </items>
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </MenuButton>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <PasswordField promptText="Mot de passe" />
+            <PasswordField promptText="Confirmer Mot de passe" />
+            <Button fx:id="SUBMIT" mnemonicParsing="false" onAction="#Submit" text="Confirmer" textFill="#d70a71">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <HBox prefHeight="35.0" prefWidth="310.0" spacing="100.0">
+               <children>
+                  <Button fx:id="BPP" mnemonicParsing="false" onAction="#GoToPP" text="Page Précédente" textFill="#d70a71" />
+                  <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="103.0" text="Page Suivante" textFill="#d70a71" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <ImageView fitHeight="78.0" fitWidth="24.0" layoutX="143.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Users/khalf/OneDrive/الصور/LOGO%20WIH.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WELCOMEPAGEController">
+   <children>
+      <VBox alignment="CENTER" layoutX="13.0" layoutY="250.0" prefHeight="94.0" prefWidth="562.0" spacing="7.0">
+         <children>
+            <Button fx:id="buttonhome" mnemonicParsing="false" onAction="#gOTOhOME" text="Commencer votre aventure!" textFill="#d70a71">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="buttonExit" mnemonicParsing="false" onAction="#Exit" text="Quitter " textFill="#d70a71">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" layoutX="11.0" layoutY="355.0" prefHeight="40.0" prefWidth="578.0" spacing="80.0">
+         <children>
+            <RadioButton fx:id="RFarancais" mnemonicParsing="false" onAction="#ChangeToFrench" text="Francais" textFill="#24298c" />
+            <RadioButton fx:id="RAnglais" mnemonicParsing="false" onAction="#ChangeToEnglish" text="Anglais" textFill="#24298c" />
+            <RadioButton fx:id="RAabe" mnemonicParsing="false" onAction="#ChangeToArabic" text="Arabe" textFill="#24298c" />
+         </children>
+      </HBox>
+      <VBox alignment="TOP_CENTER" layoutX="8.0" layoutY="14.0" prefHeight="234.0" prefWidth="588.0" spacing="20.0">
+         <children>
+            <Label fx:id="labelBienvenue" alignment="CENTER" contentDisplay="CENTER" text="Bienvenue à Women In Health Application  ">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.843137264251709" green="0.03921568766236305" blue="0.4431372582912445" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.8947368264198303" green="0.8218323588371277" blue="0.8607147336006165" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label fx:id="TEXT1" text="WIH est une application de sensibilisation  pour femmes pour leur permettre de" textFill="#24298c">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="Text2" text="Communiquer, partager leurs expériences, ..." textFill="#24298c">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="88.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Users/khalf/OneDrive/الصور/LOGO%20WIH.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

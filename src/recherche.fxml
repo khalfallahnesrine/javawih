@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-border-color: #d70a71;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RechercheController">
+   <children>
+      <Label layoutX="89.0" layoutY="23.0" text="Recherche" textFill="#d70a71">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField layoutX="69.0" layoutY="172.0" promptText="identifiant" style="-fx-border-color: #d70a71;" />
+      <TextField layoutX="9.0" layoutY="217.0" prefHeight="26.0" prefWidth="138.0" promptText="nom" style="-fx-border-color: #d70a71;" />
+      <TextField layoutX="166.0" layoutY="217.0" prefHeight="26.0" prefWidth="138.0" promptText="Prénom" style="-fx-border-color: #d70a71;" />
+      <TextField layoutX="43.0" layoutY="297.0" prefHeight="26.0" prefWidth="245.0" promptText="E-mail" style="-fx-border-color: #d70a71;" />
+      <TableView layoutX="310.0" layoutY="-1.0" prefHeight="400.0" prefWidth="290.0" style="-fx-border-color: #d70a71;">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Id" />
+          <TableColumn prefWidth="75.0" text="Nom Profil" />
+            <TableColumn prefWidth="75.0" text="E-mail" />
+            <TableColumn prefWidth="75.0" text="Date" />
+        </columns>
+      </TableView>
+      <Button layoutX="35.0" layoutY="341.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="71.0" text="Ajouter" textFill="#d70a71" />
+      <Button layoutX="130.0" layoutY="341.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="71.0" text="Modifier" textFill="#d70a71" />
+      <Button layoutX="221.0" layoutY="341.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="78.0" text="Supprimer" textFill="#d70a71" />
+      <DatePicker layoutX="78.0" layoutY="258.0" promptText="Choisissez une date" style="-fx-border-color: #d70a71;" />
+      <ImageView fitHeight="84.0" fitWidth="110.0" layoutX="132.0" layoutY="66.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Users/khalf/OneDrive/الصور/LOGO%20WIH.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="bpp" layoutX="16.0" layoutY="376.0" mnemonicParsing="false" onAction="#GoToPP" text="Page Précédente" textFill="#d70a71" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: White;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="NotesController">
+   <children>
+      <ImageView fitHeight="127.0" fitWidth="44.0" layoutX="278.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Users/khalf/OneDrive/الصور/LOGO%20WIH.png" />
+         </image>
+      </ImageView>
+      <TextArea fx:id="tnotes" layoutX="9.0" layoutY="93.0" prefHeight="263.0" prefWidth="244.0" promptText="Ecrivez des notes" />
+      <Label layoutX="67.0" layoutY="27.0" text="Notes" textFill="#d70a71">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Button fx:id="bajouter" layoutX="254.0" layoutY="282.0" mnemonicParsing="false" onAction="#enregistrernotes" prefHeight="74.0" prefWidth="128.0" text="Ajouter" textFill="#d70a71" />
+      <Button layoutX="14.0" layoutY="360.0" mnemonicParsing="false" text="Page Précédente" textFill="#d70a71" />
+      <TextField fx:id="idnotes" layoutX="14.0" layoutY="65.0" promptText="note numero ?" />
+      <PasswordField fx:id="CIN" layoutX="322.0" layoutY="52.0" promptText="CIN" />
+      <Label layoutX="224.0" layoutY="27.0" prefHeight="18.0" prefWidth="334.0" text="Pour ajouter votre notes , merci d'entrer votre numero d'identité " />
+   </children>
+</AnchorPane>

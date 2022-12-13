@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HOMEController">
+   <children>
+      <Label fx:id="LabelHome" alignment="CENTER" contentDisplay="CENTER" layoutX="194.0" layoutY="14.0" prefHeight="70.0" prefWidth="210.0" text="Home" textAlignment="CENTER">
+         <font>
+            <Font size="48.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.8399999737739563" green="0.041999999433755875" blue="0.4542999863624573" opacity="0.9057751297950745" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <VBox alignment="CENTER" layoutX="4.0" layoutY="78.0" prefHeight="232.0" prefWidth="592.0" spacing="20.0">
+         <children>
+            <Button fx:id="buttoninscrit" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#gotoincriptioninterface" prefHeight="51.0" prefWidth="210.0" text="Inscription " textAlignment="CENTER" textFill="#d70a71">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="Buttonconnexion" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#gotoconnexioninterface" prefHeight="51.0" prefWidth="210.0" text="Connexion" textAlignment="CENTER" textFill="#d70a71">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="ButtonPP" mnemonicParsing="false" onAction="#gotopageprecedente" text="Page Précédente" textFill="#d70a71">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" layoutX="94.0" layoutY="355.0" prefHeight="30.0" prefWidth="410.0" spacing="70.0">
+         <children>
+            <RadioButton fx:id="Rfrancais" mnemonicParsing="false" text="Francais" />
+            <RadioButton fx:id="RAnglais" mnemonicParsing="false" text="Anglais" />
+            <RadioButton fx:id="RArabe" mnemonicParsing="false" text="Arabe" />
+         </children>
+      </HBox>
+      <ImageView fx:id="PHOTOLOGO" fitHeight="84.0" fitWidth="65.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Users/khalf/OneDrive/الصور/LOGO%20WIH.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="84.0" fitWidth="65.0" layoutX="561.0" layoutY="313.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Users/khalf/OneDrive/الصور/LOGO%20WIH.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
